@@ -785,14 +785,14 @@ ul#additional_links li:after {
 @media (max-width: 767px) {
   .hero_home {
     /* For less than 767px */
-    height: 450px;
+    height: 550px;
   }
   .hero_home.version_1 {
     background-size: 100% !important;
   }
 }
 .hero_home.version_1 {
-  background: #99252d url(../img/choozpainters-home-header.png) no-repeat center bottom;
+  background: #99252d url(../img/choozlawyers-home-header.png) no-repeat center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -801,7 +801,7 @@ ul#additional_links li:after {
 @media (max-width: 767px) {
   .hero_home.version_1 {
     /* For less than 767px */
-    height: 450px;
+    height: 550px;
   }
 }
 .hero_home.version_1 .content {
@@ -834,7 +834,7 @@ ul#additional_links li:after {
 @media (max-width: 767px) {
   .hero_home.version_2 {
     /* For less than 767px */
-    height: 450px;
+    height: 550px;
   }
 }
 .hero_home.version_2 .content {
@@ -868,7 +868,7 @@ ul#additional_links li:after {
 @media (max-width: 767px) {
   .hero_home.version_3 {
     /* For less than 767px */
-    height: 450px;
+    height: 550px;
   }
 }
 .hero_home.version_3 .content {
@@ -1611,7 +1611,7 @@ a.box_cat_home ul li strong {
 @media (max-width: 991px) {
   .header-video {
     /* For less than 991px */
-    height: 450px !important;
+    height: 550px !important;
   }
 }
 
@@ -3712,7 +3712,7 @@ a.social_bt.linkedin:before {
   #error_page {
     /* For less than 767px */
     padding: 0;
-    height: 450px;
+    height: 550px;
   }
 }
 
