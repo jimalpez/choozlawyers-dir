@@ -195,12 +195,15 @@
             <p>Find the best lawyer near you</p>
             <form method="post" action="list.html">
               <div id="custom-search-input">
-                <div class="input-group">
+                <div class="input-group input-rounded">
                   <input
                     type="text"
                     class="search-query"
                     placeholder="Search by Location" />
-                  <input type="submit" class="btn_search" value="Search" />
+                  <label for="search-query-submit" class="btn_search-label">
+                    <i class="pe-7s-search"></i>
+                  </label>
+                  <input type="submit" id="search-query-submit" class="" />
                 </div>
                 <ul>
                   <li>
