@@ -659,7 +659,7 @@ ul#additional_links {
     height: 550px;
   }
   &.version_1 {
-    background: $primary-color url(../img/choozlawyers-home-header.png)
+    background: $primary-color url(../img/choozlawyers-hero-background.png)
       no-repeat center bottom;
     @include background-size(85%);
     @include mobile {
@@ -670,7 +670,7 @@ ul#additional_links {
     }
   }
   &.version_white {
-    background: #fff url(../img/choozlawyers-home-header.png) no-repeat center
+    background: #fff url(../img/choozlawyers-hero-background.png) no-repeat center
       bottom;
     @include background-size(85%);
     @include mobile {
@@ -723,7 +723,7 @@ ul#additional_links {
     }
   }
   &.version_3 {
-    background: $primary-color url(../img/choozlawyers-home-header.png)
+    background: $primary-color url(../img/choozlawyers-hero-background.png)
       no-repeat center bottom;
     @include background-size(85%);
     @include mobile {
