@@ -491,13 +491,13 @@ ul#top_access {
 
 // Main Logo
 .main-logo {
-	height: 100%;
-	display: flex;
-	align-items: center;
-	img {
-		width: 110px;
-		height: auto;
-	}	
+  height: 100%;
+  display: flex;
+  align-items: center;
+  img {
+    width: 110px;
+    height: auto;
+  }
 }
 /* logo home with h1 */
 #logo_home {
@@ -659,7 +659,18 @@ ul#additional_links {
     height: 550px;
   }
   &.version_1 {
-    background: $primary-color url(../img/choozlawyers-home-header.png) no-repeat center
+    background: $primary-color url(../img/choozlawyers-home-header.png)
+      no-repeat center bottom;
+    @include background-size(85%);
+    @include mobile {
+      height: 550px;
+    }
+    .content {
+      @include rgba(bg, $primary-color, 0);
+    }
+  }
+  &.version_white {
+    background: #fff url(../img/choozlawyers-home-header.png) no-repeat center
       bottom;
     @include background-size(85%);
     @include mobile {
@@ -667,6 +678,10 @@ ul#additional_links {
     }
     .content {
       @include rgba(bg, $primary-color, 0);
+      color: $primary-color;
+      h3 {
+        color: $primary-color;
+      }
     }
   }
   &.version_2 {
@@ -708,8 +723,8 @@ ul#additional_links {
     }
   }
   &.version_3 {
-    background: $primary-color url(../img/choozlawyers-home-header.png) no-repeat center
-      bottom;
+    background: $primary-color url(../img/choozlawyers-home-header.png)
+      no-repeat center bottom;
     @include background-size(85%);
     @include mobile {
       height: 550px;
@@ -823,6 +838,28 @@ ul#additional_links {
       }
       @include extra-small-mobile {
         @include fontSize(32px);
+      }
+    }
+  }
+}
+
+.version_white {
+  #custom-search-input {
+    .input-rounded {
+      .search-query {
+        border: 2px solid $primary-color;
+      }
+      .btn_search-label {
+        background-color: #f4f4f4;
+        // border: 2px solid $primary-color;
+      }
+    }
+    ul {
+      li {
+        label {
+          @include rgba(bg, #f4f4f4, 1);
+          color: $primary-color;
+        }
       }
     }
   }
