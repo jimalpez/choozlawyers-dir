@@ -664,6 +664,7 @@ ul#additional_links {
     @include background-size(70%);
     @include mobile {
       height: 550px;
+      @include background-size(100%);
     }
     .content {
       @include rgba(bg, $primary-color, 0);
@@ -675,6 +676,7 @@ ul#additional_links {
     @include background-size(70%);
     @include mobile {
       height: 550px;
+      @include background-size(100%);
     }
     .content {
       @include rgba(bg, $primary-color, 0);
