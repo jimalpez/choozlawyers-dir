@@ -932,15 +932,6 @@ ul#additional_links {
       @include fontSize(12px);
       input[type="radio"] {
         display: none;
-        // &:checked + label,
-        // &:checked + label:hover {
-        //   background-color: $third-color;
-        //   color: #fff;
-        // }
-        // &:hover+label {
-        // 	background-color: $secondary-color;
-        // 	color: #fff;
-        // }
       }
       label {
         @include transition-default;
@@ -963,29 +954,6 @@ ul#additional_links {
       }
     }
   }
-  //   input[type="submit"] {
-  //     position: absolute;
-  //     @include transition-default;
-  //     right: 0;
-  //     color: #fff;
-  //     font-weight: 600;
-  //     @include fontSize(16px);
-  //     top: 0;
-  //     border: 0;
-  //     padding: 0 25px;
-  //     height: 50px;
-  //     cursor: pointer;
-  //     outline: none;
-  //     @include border-radius(0 3px 3px 0);
-  //     background-color: $third-color;
-  //     &:hover {
-  //       background-color: $secondary-color;
-  //     }
-  //     @include extra-small-mobile {
-  //       text-indent: -999px;
-  //       background: $third-color url(../img/search.svg) no-repeat center center;
-  //     }
-  //   }
 }
 
 .box_feat {
@@ -1464,7 +1432,8 @@ iframe {
     font-weight: 600;
     top: 0;
     border: 0;
-    padding: 120px 15px 0;
+    padding-left: 15px;
+    padding-right: 15px;
     height: 40px;
     cursor: pointer;
     @include border-radius(0 3px 3px 0);
