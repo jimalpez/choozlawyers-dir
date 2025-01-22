@@ -911,7 +911,7 @@ ul#additional_links {
     padding-left: 30px;
     border: 0;
     @include border-radius(3px);
-    @include box-shadow(0px 0px 50px 0px rgba(0, 0, 0, 0.35));
+    @include box-shadow(0px 0px 10px 0px rgba(0, 0, 0, 0.2));
     font-weight: 500;
     @include fontSize(16px);
     color: #333;
