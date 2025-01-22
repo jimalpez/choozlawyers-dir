@@ -661,7 +661,7 @@ ul#additional_links {
   &.version_1 {
     background: $primary-color url(../img/choozlawyers-hero-background.png)
       no-repeat center bottom;
-    @include background-size(85%);
+    @include background-size(70%);
     @include mobile {
       height: 550px;
     }
@@ -670,9 +670,9 @@ ul#additional_links {
     }
   }
   &.version_white {
-    background: #fff url(../img/choozlawyers-hero-background.png) no-repeat center
-      bottom;
-    @include background-size(85%);
+    background: #fff url(../img/choozlawyers-hero-background.png) no-repeat
+      center bottom;
+    @include background-size(70%);
     @include mobile {
       height: 550px;
     }
