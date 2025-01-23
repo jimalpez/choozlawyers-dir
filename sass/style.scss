@@ -44,6 +44,8 @@ Author URI: http://themeforest.net/user/Ansonika/
 @import "variables";
 @import "mixins";
 
+@import "header";
+
 /*-------- Preloader --------*/
 #preloader {
   position: fixed;
@@ -385,54 +387,6 @@ a.btn_1,
 }
 
 /*-------- 1.3 Structure --------*/
-/* Header */
-header {
-  background-color: #fff;
-  min-height: 55px;
-  padding: 10px 0;
-  border-bottom: 1px solid transparent;
-  &.header_sticky {
-    width: 100%;
-    z-index: 999;
-    position: relative;
-    @include transition-default;
-    &.sticky {
-      border-bottom: 1px solid $border-color;
-      position: fixed;
-      left: 0;
-      top: 0;
-      z-index: 99999999;
-      @include tablet {
-        position: static;
-      }
-    }
-  }
-  &.header_map {
-    width: 100%;
-    border-bottom: 1px solid $border-color;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 2;
-  }
-  &.static {
-    position: static;
-    border-bottom: 1px solid $border-color;
-    z-index: 999;
-    position: relative;
-  }
-  .container {
-    @include tablet {
-      width: 100% !important;
-      margin-right: auto !important;
-      margin-left: auto !important;
-      padding-right: 15px !important;
-      padding-left: 15px !important;
-      width: 100% !important;
-      max-width: 100%;
-    }
-  }
-}
 
 ul#top_access {
   float: right;
@@ -671,10 +625,13 @@ ul#additional_links {
     }
   }
   &.version_white {
-    background: #fff url(../img/choozlawyers-hero-background.png) no-repeat
-      center bottom;
-    @include background-size(70%);
+    background: #fff url(../img/hero_images/choozlawyers_background_desktop.png)
+      no-repeat center bottom;
+    @include background-size(80%);
     @include mobile {
+      background: #fff
+        url(../img/hero_images/choozlawyers_background_mobile.png) no-repeat
+        center bottom;
       height: 550px;
       @include background-size(100%);
     }
