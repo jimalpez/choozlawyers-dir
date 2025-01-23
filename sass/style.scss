@@ -44,7 +44,7 @@ Author URI: http://themeforest.net/user/Ansonika/
 @import "variables";
 @import "mixins";
 
-@import "header";
+@import "header"; 
 
 /*-------- Preloader --------*/
 #preloader {
@@ -452,6 +452,18 @@ ul#top_access {
     width: 110px;
     height: auto;
   }
+  &--desktop {
+    @include mobile {
+      display: none;
+    }
+  }
+  &--mobile {
+    width: 50px !important;
+    display: none;
+    @include mobile {
+      display: block;
+    }
+  }
 }
 /* logo home with h1 */
 #logo_home {
@@ -606,7 +618,7 @@ ul#additional_links {
 
 /*-------- 2.1 Home--------*/
 .hero_home {
-  height: 720px;
+  height: 760px;
   width: 100%;
   display: table;
   @include mobile {
@@ -627,7 +639,7 @@ ul#additional_links {
   &.version_white {
     background: #fff url(../img/hero_images/choozlawyers_background_desktop.png)
       no-repeat center bottom;
-    @include background-size(80%);
+    @include background-size(90%);
     @include mobile {
       background: #fff
         url(../img/hero_images/choozlawyers_background_mobile.png) no-repeat
