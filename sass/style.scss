@@ -853,15 +853,14 @@ ul#additional_links {
   #custom-search-input {
     .input-rounded {
       .search-query {
-        border: 2px solid #fff;
-        background: transparent;
-        color: #fff;
+        color: #000;
         &::placeholder {
-          color: #ffffff90;
+          color: #00000090;
         }
       }
       .btn_search-label {
         background-color: transparent;
+        color: #000;
       }
     }
     ul {
