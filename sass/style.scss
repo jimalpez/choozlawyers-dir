@@ -655,6 +655,20 @@ ul#additional_links {
       }
     }
   }
+  &.version_dark {
+    background: #362b29 url(../img/hero_images/1231134454323.png)
+      no-repeat center bottom;
+    @include background-size(90%);
+    @include mobile {
+      background: #362b29
+        url(../img/hero_images/1231134454323.png) no-repeat center bottom;
+      height: 550px;
+      @include background-size(100%);
+    }
+    .content {
+      @include rgba(bg, #362b29, 0);
+    }
+  }
   &.version_2 {
     background: none;
     position: relative;
@@ -830,6 +844,32 @@ ul#additional_links {
         label {
           @include rgba(bg, #f4f4f4, 1);
           color: $primary-color;
+        }
+      }
+    }
+  }
+}
+.version_dark {
+  #custom-search-input {
+    .input-rounded {
+      .search-query {
+        border: 2px solid #fff;
+        background: transparent;
+        color: #fff;
+        &::placeholder {
+          color: #ffffff90;
+        }
+      }
+      .btn_search-label {
+        background-color: transparent;
+      }
+    }
+    ul {
+      li {
+        label {
+          @include rgba(bg, #f4f4f4, 0);
+          color: #fff;
+          border: 1px solid #fff;
         }
       }
     }
