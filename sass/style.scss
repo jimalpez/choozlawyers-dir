@@ -621,6 +621,7 @@ ul#additional_links {
   height: 760px;
   width: 100%;
   display: table;
+  position: relative;
   @include mobile {
     height: 550px;
   }
@@ -631,6 +632,31 @@ ul#additional_links {
     @include mobile {
       height: 550px;
       @include background-size(100%);
+    }
+    .content {
+      @include rgba(bg, $primary-color, 0);
+    }
+  }
+  &.version_gradient {
+    background: linear-gradient(to bottom, #362b29, #362b29, #bc9086);
+    @include mobile {
+      height: 650px;
+    }
+    .version_gradient_background_image {
+      height: 100%;
+      width: 88%;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url(../img/hero_images/choozlawyers-city-header-laptop-1.png);
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      @include mobile {
+        background-image: url(../img/hero_images/choozlawyers-city-header-mobile-1.png);
+        width: 100%;
+      }
     }
     .content {
       @include rgba(bg, $primary-color, 0);
@@ -656,12 +682,12 @@ ul#additional_links {
     }
   }
   &.version_dark {
-    background: #362b29 url(../img/hero_images/1231134454323.png)
+    background: #362b29 url(../img/hero_images/choozlawyers-city-header-laptop-1.png)
       no-repeat center bottom;
     @include background-size(90%);
     @include mobile {
       background: #362b29
-        url(../img/hero_images/2342424123.png) no-repeat center bottom;
+        url(../img/hero_images/choozlawyers-city-header-mobile-1.png) no-repeat center bottom;
       height: 550px;
       @include background-size(100%);
     }
