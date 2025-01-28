@@ -638,7 +638,7 @@ ul#additional_links {
     }
   }
   &.version_gradient {
-    background: linear-gradient(to bottom, #362b29, #362b29, #bc9086);
+    background: linear-gradient(to bottom, #362b29, #362b29, #8b6b64);
     @include mobile {
       height: 650px;
     }
@@ -887,6 +887,30 @@ ul#additional_links {
       .btn_search-label {
         background-color: transparent;
         color: #000;
+      }
+    }
+    ul {
+      li {
+        label {
+          @include rgba(bg, #f4f4f4, 0);
+          color: #fff;
+          border: 1px solid #fff;
+        }
+      }
+    }
+  }
+}
+.version_gradient {
+  #custom-search-input {
+    .input-rounded {
+      .search-query {
+        color: #000;
+        &::placeholder {
+          color: #00000090;
+        }
+      }
+      .btn_search-label {
+        background-color: #362b29;
       }
     }
     ul {
