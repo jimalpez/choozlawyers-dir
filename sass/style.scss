@@ -662,6 +662,31 @@ ul#additional_links {
       @include rgba(bg, $primary-color, 0);
     }
   }
+  &.version_gradient_2 {
+    background: linear-gradient(to bottom, #362b29, #362b29, #8b6b64);
+    @include mobile {
+      height: 650px;
+    }
+    .version_gradient_background_image {
+      height: 100%;
+      width: 88%;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url(../img/hero_images/_0001_Слой-2.png);
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      @include mobile {
+        background-image: url(../img/hero_images/choozlawyers-city-header-mobile-1.png);
+        width: 100%;
+      }
+    }
+    .content {
+      @include rgba(bg, $primary-color, 0);
+    }
+  }
   &.version_white {
     background: #fff url(../img/hero_images/choozlawyers_background_desktop.png)
       no-repeat center bottom;
@@ -901,6 +926,30 @@ ul#additional_links {
   }
 }
 .version_gradient {
+  #custom-search-input {
+    .input-rounded {
+      .search-query {
+        color: #000;
+        &::placeholder {
+          color: #00000090;
+        }
+      }
+      .btn_search-label {
+        background-color: #362b29;
+      }
+    }
+    ul {
+      li {
+        label {
+          @include rgba(bg, #f4f4f4, 0);
+          color: #fff;
+          border: 1px solid #fff;
+        }
+      }
+    }
+  }
+}
+.version_gradient_2 {
   #custom-search-input {
     .input-rounded {
       .search-query {
